@@ -3,3 +3,9 @@ intervallo per trovare il massimo centrale: -200 a 235
 togliendo i punti saturati da -11 a 83
 massimo trovato come intersezione di due rette
 theta_zero = 33.78852285577387 +- 1.984581780844676 passi motore
+
+theta(-1)
+punto sperimentale: -740 passi motore
+ancora meglio sarebbe la media tra -740 e -750: -745 passi motore
+fit parabolico, da -785 a -650
+theta(-1)= -745.1863160518429 +- -17.14602677264407 passi motore

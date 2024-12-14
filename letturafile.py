@@ -38,11 +38,11 @@ plt.ylabel("Intensity")
 plt.title("Intensità vs Passi Motore")
 plt.show()
 
-mask_x1 = (passi_motore < -11) #| (passi_motore > 83)  # Maschera per i dati fuori dall'intervallo
+mask_x1 = (passi_motore < 20) #| (passi_motore > 83)  # Maschera per i dati fuori dall'intervallo
 x_filtered1 = passi_motore[mask_x1]
 y_filtered1 = intensity[mask_x1]
 
-mask_x2 = (passi_motore > 83)
+mask_x2 = (passi_motore > 60)
 x_filtered2 = passi_motore[mask_x2]
 y_filtered2 = intensity[mask_x2]
 # Fit parabolico (polinomio di grado 1)

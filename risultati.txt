@@ -1,3 +1,0 @@
-Intersezione delle due rette:
-theta_zero = 33.78852285577387 +- 1.984581780844676
-y_intersection = 325206.1645356618 +- 1801.731195275539

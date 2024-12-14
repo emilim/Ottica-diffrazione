@@ -1,0 +1,5 @@
+theta zero, 1 fenditura
+intervallo per trovare il massimo centrale: -200 a 235
+togliendo i punti saturati da -11 a 83
+massimo trovato come intersezione di due rette
+theta_zero = 33.78852285577387 +- 1.984581780844676 passi motore

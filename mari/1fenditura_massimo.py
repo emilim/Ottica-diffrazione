@@ -87,9 +87,10 @@ plt.legend()
 plt.show()
 
 # Sovrascrivere completamente il file di testo con i nuovi risultati
-with open('risultati.txt', 'w') as file:
-    file.write(f"Intersezione delle due rette:\n")
-    file.write(f"theta_zero = {x_intersection} +- {s_x}\n")
+#with open('risultati.txt', 'w') as file:
+#    file.write(f"theta zero, 1 fenditura intervallo -200 a 235:\n")
+#    file.write(f"theta_zero = {x_intersection} +- {s_x} passi motore\n")
+
 
     
 

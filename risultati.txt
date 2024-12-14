@@ -1,2 +1,0 @@
-Intersezione delle due rette:
-theta_zero = 39.41006980278088 +- 2.5849041701912703

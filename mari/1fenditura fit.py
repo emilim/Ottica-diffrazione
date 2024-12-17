@@ -21,6 +21,11 @@ y_fit = np.sin(theta_fit_mrad*10**-3)
 s_y_sper = np.abs(np.cos(theta_sperimentale_mrad*10**-3) * s_theta_sperimentale_mrad*10**-3)
 s_y_fit = np.abs(np.cos(theta_fit_mrad*10**-3) * s_theta_fit_mrad*10**-3)
 
+m_sper, q_sper = np.polyfit(ordini, y_sper, 1)
+m_fit, q_fit = np.polyfit(ordini, y_fit, 1)
+
+m_chiquadro = 1/np.sqrt()
+
 plt.errorbar(ordini, y_sper, c='b', yerr=s_y_sper, fmt='None')
 plt.errorbar(ordini, y_fit, c='r', yerr=s_y_fit, fmt='None')
 plt.scatter(ordini, y_sper, c='b')

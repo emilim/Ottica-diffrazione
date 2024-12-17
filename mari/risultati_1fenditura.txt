@@ -3,16 +3,47 @@ intervallo per trovare il massimo centrale: -200 a 235
 togliendo i punti saturati da -11 a 83
 massimo trovato come intersezione di due rette
 theta_zero = 33.78852285577387 +- 1.984581780844676 passi motore
+theta_zero: 0.6453607865452808 +- 0.05551335460498983 mrad
 
 theta(1) e theta(-1) non distinguibili
 
 theta(-2)
 punto sperimentale: -740 passi motore
 ancora meglio sarebbe la media tra -740 e -750: -745 passi motore
+minimo sperimentale: -14.2295 +- 0.15260414182006307 mrad
 fit parabolico, da -785 a -650
 theta(-2)= -745.1863160518429 +- 17.14602677264407 passi motore
 
 theta(2)
 punto sperimentale: 810 passi motore
+minimo sperimentale: 15.470999999999998 +- 0.1642417565808675 mrad
 fit parabolico, da 700 a 860
 theta(2)= 812.9208594754174 +- 14.073461047648998 passi motore
+theta(2)=15.526788415980471 +- 0.1552683610212166 mrad
+
+thet(-3)
+punto sperimentale: -1160 passi motore
+minimo sperimentale: -22.156 +- 0.22831797063268983 mrad
+fit parabolico, da -1240 a -1010
+minimo radianti verosimiglianza: -22.283490876860338 +- 0.22283539138873246 mrad
+
+theta(3)
+punto sperimentale:1210 passi motore
+minimo sperimentale: 23.110999999999997 +- 0.2375965276642299 mrad
+fit parabolico, da 1110 a 1290
+minimo radianti verosimiglianza: 23.156284422689186 +- 0.2315633080730888 mrad 
+
+theta(-4)
+punto sperimentale: -1620 pm
+minimo sperimentale: -30.941999999999997 +- 0.3142947158624779 mrad
+fit parabolico, -1650 a -1490
+minimo radianti verosimiglianza: -31.019382178683067 +- 0.3101944224950267 mrad 
+
+theta(4)
+punto sperimentale: 1670 pm
+minimo sperimentale: 31.897 +- 0.32370096505114804 mrad
+fit parabolico, da 1540 a 1740
+minimo radianti verosimiglianza: 31.976211890797252 +- 0.3197627338839551 mrad
+
+
+

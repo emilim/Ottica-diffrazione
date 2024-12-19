@@ -1,0 +1,1 @@
+prendo i minimi sperimentali, per theta zero prendo la medi del segmento saturato

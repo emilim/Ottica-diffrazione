@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import argparse
 from scipy import stats
-from scipy.stats import norm
 
 parser = argparse.ArgumentParser(description="Plot data da un file specificato")
 parser.add_argument('filename', type=str, help='nome del file da leggere')
@@ -32,6 +31,12 @@ if args.start is not None or args.end is not None:
         mask &= passi_motore <= args.end
     passi_motore = passi_motore[mask]
     intensity = intensity[mask]
+
+plt.scatter(passi_motore, intensity)
+plt.xlabel("Passi Motore")
+plt.ylabel("Intensity")
+plt.title("Intensità vs Passi Motore")
+plt.show()
 
 
 coefficients, cov_matrix = np.polyfit(passi_motore, intensity, 2, full=False, cov=True)

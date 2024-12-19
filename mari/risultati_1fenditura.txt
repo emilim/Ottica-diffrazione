@@ -13,6 +13,7 @@ ancora meglio sarebbe la media tra -740 e -750: -745 passi motore
 minimo sperimentale: -14.2295 +- 0.15260414182006307 mrad
 fit parabolico, da -785 a -650
 theta(-2)= -745.1863160518429 +- 17.14602677264407 passi motore
+rad veros: -14.233058636590181 +- 0.1526373248186308 mrad
 
 theta(2)
 punto sperimentale: 810 passi motore

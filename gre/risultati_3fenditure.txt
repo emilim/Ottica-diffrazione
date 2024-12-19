@@ -1,0 +1,28 @@
+solo punti sperimentali
+theta zero: 41 passi motore
+theta zero: 0.7830999999999999 +- 0.018301155273445377 mrad
+
+theta -1: -136 passi motore
+theta -1: -2.5976 +- 0.030795495343225905 mrad
+
+theta 1: 215 passi motore
+theta 1: 4.1065 +- 0.04427129845163428 mrad
+
+theta -2: -313 passi motore
+theta -2: -5.9783 +- 0.062029247983982745 mrad
+
+theta 2: 392 passi motore
+theta 2: 7.4872 +- 0.07667753452129913 mrad
+
+theta 3: 572 passi motore
+theta 3: 10.9252 +- 0.11049728718234857 mrad
+
+theta -3: -490 passi motore
+theta -3: -9.359 +- 0.0950406623525641 mrad
+
+theta 4: 749 passi motore
+theta 4: 14.3059 +- 0.14401235890469288 mrad
+
+theta -4: -667 passi motore
+theta -4: -12.7397 +- 0.1284665801611518 mrad
+

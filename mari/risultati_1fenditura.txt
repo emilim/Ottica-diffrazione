@@ -1,9 +1,13 @@
 theta zero, 1 fenditura
-intervallo per trovare il massimo centrale: -200 a 235
+intervallo per trovare il massimo centrale: -120 a 170
 togliendo i punti saturati da -11 a 83
 massimo trovato come intersezione di due rette
-theta_zero = 33.78852285577387 +- 1.984581780844676 passi motore
+theta_zero = 31.74665091198183 +- 0.22071450419113192 passi motore
 theta_zero: 0.6453607865452808 +- 0.05551335460498983 mrad
+chi quadro rette interpolate:
+chi1=4.914489453754168, GDL 11
+chi2=5.563576803244876, GDL 9 
+
 
 theta(1) e theta(-1) non distinguibili
 

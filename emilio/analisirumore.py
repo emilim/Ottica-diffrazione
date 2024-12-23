@@ -18,14 +18,31 @@ array = df.values
 passi_motore = array[:, 0]
 intensity = array[:, 1]
 
-plt.scatter(passi_motore, intensity)
-plt.xlabel("Passi Motore")
-plt.ylabel("Intensità")
+# remove the point with passi_motore = 4620
+index = np.where(passi_motore == -4620)
+passi_motore = np.delete(passi_motore, index)
+intensity = np.delete(intensity, index)
 
-plt.show()
+index = np.where(passi_motore == -4630)
+passi_motore = np.delete(passi_motore, index)
+intensity = np.delete(intensity, index)
+
 
 media = np.mean(intensity)
 deviazione_standard = np.std(intensity)
+
+plt.plot(passi_motore, intensity)
+# make a blue long horizontal bar centered at the mean value with width equal to the standard deviation
+plt.axhline(y=media, color='b', linestyle='-', label='Media')
+plt.axhline(y=media + deviazione_standard, color='b', linestyle='--', label='Deviazione standard')
+plt.axhline(y=media - deviazione_standard, color='b', linestyle='--')
+
+plt.xlabel("Passi Motore")
+plt.ylabel("Intensità (u.a.)")
+
+plt.show()
+
+
 print(f"Media rumore: {media}", f"Deviazione standard rumore: {deviazione_standard/np.sqrt(len(intensity)-1)}", sep='\n')
 # Histogram
 counts, bins, _ = plt.hist(intensity, bins=20, edgecolor='black', alpha=0.7, range=(media - 50, media + 50), density=False)
@@ -41,7 +58,7 @@ gaussian_scaled = gaussian * len(intensity) * bin_width  # Scale Gaussian to mat
 # Plot Gaussian curve
 plt.plot(x, gaussian_scaled, 'k', linewidth=2)
 
-plt.xlabel("Intensità")
+plt.xlabel("Intensità (u.a.)")
 plt.ylabel("Frequenza")
 
 plt.show()

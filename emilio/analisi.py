@@ -32,10 +32,14 @@ if args.start is not None or args.end is not None:
     passi_motore = passi_motore[mask]
     intensity = intensity[mask]
 
-plt.scatter(passi_motore, intensity)
+
+plt.plot(passi_motore, intensity)
 plt.xlabel("Passi Motore")
-plt.ylabel("Intensity")
-plt.title("Intensità vs Passi Motore")
+plt.ylabel("Intensità (u.a.)")
+plt.yscale('log')
+plt.axhline(y=2281, color='b', linestyle='-', label='Rumore')
+plt.title("Passi - Intensità (u.a.)")
+plt.legend()
 plt.show()
 
 massimo = 0

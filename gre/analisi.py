@@ -74,7 +74,7 @@ chi= np.sum((intensity-(a*passi_motore**2 + b*passi_motore + c))**2/s_y**2)
 
 #conversione passi motore radiante
 minimo_rad= minimo*0.0191 #mrad
-s_conversione = 0.0191*np.sqrt((0.005/0.5)**2 + (0.5/(400*65.5))**2)
+s_conversione = 0.0191*np.sqrt((0.005/0.5)**2 + (0.5/(65.5))**2)
 s_minimorad1=np.sqrt(np.pow(0.0191*s_minimo1, 2) + np.pow(minimo*s_conversione, 2))
 print(f"minimo radianti verosimiglianza: {minimo_rad} +- {s_minimorad1} mrad \n")
 print(f"s_conv={s_conversione}\n")

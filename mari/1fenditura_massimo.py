@@ -102,7 +102,7 @@ plt.show()
 
 #conversione passi motore radiante
 theta0_rad= x_intersection*0.0191 #mrad
-s_conversione = 0.0191*np.sqrt((0.005/0.5)**2 + (0.5/(400*65.5))**2)
+s_conversione = 0.0191*np.sqrt((0.005/0.5)**2 + (0.5/65.5)**2)
 s_theta0=np.sqrt(np.pow(0.0191*s_x, 2) + np.pow(x_intersection*s_conversione, 2))
 print(f"theta_0={theta0_rad} +-{s_theta0} mrad")
 

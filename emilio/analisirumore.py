@@ -63,6 +63,8 @@ plt.ylabel("Frequenza")
 
 plt.show()
 
+
+
     
 
 

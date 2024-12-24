@@ -56,9 +56,12 @@ plt.scatter(passi_motore, intensity)
 #plt.scatter(minimo, polynomial(minimo), color="green")
 #plt.errorbar(minimo, polynomial(minimo), xerr=s_minimo1)
 #plt.plot(x_fit, y_fit, color="red")
+plt.axhline(y=2281, color='b', linestyle='-', label='Rumore')
+#plt.yscale("log")
 plt.xlabel("Passi Motore")
 plt.ylabel("Intensity")
 plt.title("Intensità vs Passi Motore")
+plt.legend()
 plt.show()
 
 s_y= np.sqrt(1/np.size(intensity)*np.sum((intensity-polynomial(passi_motore))**2))
@@ -69,7 +72,7 @@ chi= np.sum((intensity-(a*passi_motore**2 + b*passi_motore + c))**2/s_y**2)
 
 #conversione passi motore radiante
 minimo_rad= minimo*0.0191 #mrad
-s_conversione = 0.0191*np.sqrt((0.005/0.5)**2 + (0.5/(400*65.5))**2)
+s_conversione = 0.0191*np.sqrt((0.005/0.5)**2 + (0.5/(65.5))**2)
 s_minimorad1=np.sqrt(np.pow(0.0191*s_minimo1, 2) + np.pow(minimo*s_conversione, 2))
 print(f"minimo radianti verosimiglianza: {minimo_rad} +- {s_minimorad1} mrad \n")
 print(f"s_conv={s_conversione}\n")

@@ -1,6 +1,6 @@
 import numpy as np
 
-s_conv= 0.0191*np.sqrt((0.005/0.5)**2 + (0.5/(400*65.5))**2)
+s_conv= 0.0191*np.sqrt((0.005/0.5)**2 + (0.5/(65.5))**2)
 
 theta_0_passim = -70.5 #passi motore
 theta_0 = theta_0_passim*0.0191

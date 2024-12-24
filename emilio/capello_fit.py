@@ -31,9 +31,8 @@ print(f"Larghezza fenditura: {larghezza_fenditura * 10**6} +- {s_larghezza_fendi
 
 plt.errorbar(ordini, sintheta, c='b', yerr=s_sintheta, fmt='None')
 plt.scatter(ordini, sintheta, c='r')
-
-plt.plot(ordini, m * ordini + q, c='b', label='Fit')
-
+plt.plot(ordini, m * ordini + q, c='b', label='Fit lineare')
+plt.legend()
 plt.xlabel("Ordini")
 plt.ylabel("sin(theta - theta0) mrad")
 plt.show()

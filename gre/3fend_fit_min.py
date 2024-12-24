@@ -16,20 +16,9 @@ file_path = 'risultati_minimi.txt'
 data = pd.read_csv(file_path, sep='\t', header=None, names=['Ordine', 'Angolo', 'Incertezza'])
 
 ordini = data['Ordine'].values
-#theta_sperimentale_mrad_0 = data['Angolo'].values
-#s_theta_sperimentale_mrad_0 = data['Incertezza'].values
-def parse_angle_and_uncertainty(data):
-    try:
-        parts = data.split('\t')  # Divide la stringa nei valori separati da uno spazio
-        angle = float(parts[0])  # Il primo valore è l'angolo
-        uncertainty = float(parts[1])  # Il secondo valore è l'incertezza
-        return angle, uncertainty
-    except ValueError:
-        # Se non possiamo convertire in float, restituiamo None per indicare errore
-        return None, None
+theta_sperimentale_mrad_0 = data['Angolo'].values
+s_theta_sperimentale_mrad_0 = data['Incertezza'].values
 
-# Usa la funzione per estrarre angoli e incertezze
-theta_sperimentale_mrad_0, s_theta_sperimentale_mrad_0 = zip(*data['Angolo'].map(parse_angle_and_uncertainty))
 
 # Converte in array numpy
 theta_sperimentale_mrad_0 = np.array(theta_sperimentale_mrad_0)

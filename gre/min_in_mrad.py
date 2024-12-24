@@ -23,9 +23,9 @@ for index, row in data.iterrows():
     
     # Determinare l'ordine di grandezza
     if passi > 0:
-        ordine_grandezza = f"{index + 1}/3"
+        ordine_grandezza = (index + 1)/3
     else:
-        ordine_grandezza = f"{-(index + 1)}/3"
+        ordine_grandezza = -(index + 1)/3
     
  
     # Aggiungere i risultati alla lista

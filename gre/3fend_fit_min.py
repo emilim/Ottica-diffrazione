@@ -15,10 +15,9 @@ def fit_lineare_doro(x, y, sigma_y):
 file_path = 'risultati_minimi.txt' 
 data = pd.read_csv(file_path, sep='\t', header=None, names=['Ordine', 'Angolo', 'Incertezza'])
 
-ordini = data['Ordine'].values
-theta_sperimentale_mrad_0 = data['Angolo'].values
-s_theta_sperimentale_mrad_0 = data['Incertezza'].values
-
+ordini = np.array(data['Ordine'].values[1:]).astype(float)
+theta_sperimentale_mrad_0 = np.array(data['Angolo'].values[1:]).astype(float)
+s_theta_sperimentale_mrad_0 = np.array(data['Incertezza'].values[1:]).astype(float)
 
 # Converte in array numpy
 theta_sperimentale_mrad_0 = np.array(theta_sperimentale_mrad_0)

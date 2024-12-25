@@ -15,17 +15,19 @@ data = pd.read_csv(file_path, sep='\t', header=0, names=['Passi', 'Intensità'])
 
 # Inizializzare una lista per i risultati
 risultati = []
+index = 1
 
 # Calcolare i valori per ogni riga del DataFrame
 for index, row in data.iterrows():
     passi = row['Passi']
     minimo_mrad, s_min_rad = calcola_valori(passi)
+      
+    if passi < 0:  # Controlla se il valore è sotto zero
+        ordine_grandezza = -((7/3)-(index/3))
     
-    # Determinare l'ordine di grandezza
     if passi > 0:
-        ordine_grandezza = (index + 1)/3
-    else:
-        ordine_grandezza = -(index + 1)/3
+        ordine_grandezza = (index/3)-2
+        
     
  
     # Aggiungere i risultati alla lista

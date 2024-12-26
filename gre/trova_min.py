@@ -14,20 +14,20 @@ min_intensità = []
 
 for i in range(1, len(intensità) - 1):
     
-    if intensità[i] < intensità[i-1] and intensità[i] < intensità[i+1] and -1200 <= posizione[i] <= 1225:
+    if intensità[i] < intensità[i-1] and intensità[i] < intensità[i+1] and -640 <= posizione[i] <= 700:
         min_posizioni.append(posizione[i])
         min_intensità.append(intensità[i])
 
-i=0        
-while i < len(min_posizioni) - 1:        
-    if min_posizioni[i+1]-min_posizioni[i]<=100:
-        media_p=(min_posizioni[i+1]+min_posizioni[i])/2
-        media_i=(min_intensità[i+1]+min_intensità[i])/2
-        min_posizioni[i]=media_p
-        del min_posizioni[i+1]
-        min_intensità[i]=media_i
-        del min_intensità[i+1]
-    else: i+=1    
+#i=0        
+#while i < len(min_posizioni) - 1:        
+#    if min_posizioni[i+1]-min_posizioni[i]<=100:
+#        media_p=(min_posizioni[i+1]+min_posizioni[i])/2
+#        media_i=(min_intensità[i+1]+min_intensità[i])/2
+#        min_posizioni[i]=media_p
+#        del min_posizioni[i+1]
+#        min_intensità[i]=media_i
+#        del min_intensità[i+1]
+#    else: i+=1    
 
 plt.figure(figsize=(10, 6))
 plt.plot(posizione, intensità, label="Figura di Interferenza")
@@ -40,7 +40,7 @@ plt.grid()
 plt.show()
 
 
-output_file_path = "minimi_3fenditure.txt" 
+output_file_path = "all_minimi_3fenditure.txt" 
 with open(output_file_path, 'w') as file:
     
     file.write("Posizione \t Intensita'\n")

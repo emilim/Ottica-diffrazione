@@ -45,8 +45,8 @@ print(f"Larghezza fenditura sper: {larghezza_fenditura_sper} +- {s_larghezza_fen
 plt.errorbar(ordini, y_sper, c='b', yerr=s_y_sper, fmt='None')
 plt.scatter(ordini, y_sper, c='b')
 
-plt.plot(ordini, m_sper * ordini + q_sper, c='b', label='Sperimentale')
-
+plt.plot(ordini, m_sper * ordini + q_sper, c='b', label='Fit lineari per i massimi')
+plt.legend()
 plt.xlabel("Ordini")
 plt.ylabel("sin(theta - theta0) mrad")
 plt.show()

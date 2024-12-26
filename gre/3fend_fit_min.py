@@ -59,3 +59,9 @@ plt.plot(ordini, m_sper * ordini + q_sper, c='b', label='Sperimentale')
 plt.xlabel("Ordini")
 plt.ylabel("sin(theta - theta0) mrad")
 plt.show()
+
+a=ordini*lambda_/y_sper
+s_a=a*np.sqrt((s_lambda/lambda_)**2 + (s_y_sper/y_sper)**2)
+a_medio=np.mean(a)
+print(f"ampiezza fend:{a} +- {s_a}\n")
+print(f"media: {a_medio}")

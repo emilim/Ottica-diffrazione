@@ -12,7 +12,7 @@ def fit_lineare_doro(x, y, sigma_y):
     return m, q, sigma_m, sigma_q
 
 
-file_path = 'risultati_minimi.txt' 
+file_path = 'all_risultati_minimi.txt' 
 data = pd.read_csv(file_path, sep='\t', header=None, names=['Ordine', 'Angolo', 'Incertezza'])
 
 ordini = np.array(data['Ordine'].values[1:]).astype(float)
